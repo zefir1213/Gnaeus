@@ -2,6 +2,6 @@
   "parent": "item/generated",
   "textures":
   {
-    "layer0": "newmod:items/queen"
+    "layer0": "gnaeus:items/queen"
   }
 }

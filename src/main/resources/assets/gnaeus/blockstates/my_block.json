@@ -3,7 +3,7 @@
   {
     "":
     {
-      "model": "newmod:block/my_block"
+      "model": "gnaeus:block/my_block"
     }
   }
 }

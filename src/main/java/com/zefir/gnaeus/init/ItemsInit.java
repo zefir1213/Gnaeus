@@ -1,12 +1,11 @@
-package com.zefir.gnaeus.init.items;
+package com.zefir.gnaeus.init;
 
 import com.zefir.gnaeus.NewGroup;
-import com.zefir.gnaeus.GnaeusMod;
+import com.zefir.gnaeus.items.BlackLotus;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
-import com.zefir.gnaeus.init.blocks.BlocksInit;
 import net.minecraftforge.registries.ForgeRegistries;
 
 @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)

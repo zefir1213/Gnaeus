@@ -2,6 +2,6 @@
   "parent": "block/cube_all",
   "textures":
   {
-    "all": "newmod:block/my_block"
+    "all": "gnaeus:block/my_block"
   }
 }

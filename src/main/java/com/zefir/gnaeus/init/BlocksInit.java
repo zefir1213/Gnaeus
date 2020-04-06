@@ -1,10 +1,20 @@
-package com.zefir.gnaeus.init.blocks;
+package com.zefir.gnaeus.init;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.ForgeRegistries;
 
 @net.minecraftforge.registries.ObjectHolder("gnaeus")
+@Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 public class BlocksInit
 {
-    public static Block MY_BLOCK=new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10)).setRegistryName("my_block");
+    public static Block MY_BLOCK = register("my_block", new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10)));
+
+    static private Block register(String name, Block block)
+    {
+        block.setRegistryName(name);
+        ForgeRegistries.BLOCKS.register(block);
+        return block;
+    }
 }

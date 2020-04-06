@@ -2,6 +2,6 @@
   "parent": "item/generated",
   "textures":
   {
-    "layer0": "newmod:items/black_lotus2"
+    "layer0": "gnaeus:items/black_lotus2"
   }
 }
