@@ -1,0 +1,24 @@
+{
+  "variants":
+  {
+    "facing=north":
+    {
+      "model": "gnaeus:block/card"
+    },
+    "facing=south":
+    {
+      "model": "gnaeus:block/card",
+      "y": 180
+    },
+    "facing=west":
+    {
+      "model": "gnaeus:block/card",
+      "y": 270
+    },
+    "facing=east":
+    {
+      "model": "gnaeus:block/card",
+      "y": 90
+    }
+  }
+}

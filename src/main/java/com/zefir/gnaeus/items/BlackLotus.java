@@ -24,7 +24,7 @@ public class BlackLotus extends Item
         for(int i=0; i<r; i++) playerIn.world.addParticle(ParticleTypes.HAPPY_VILLAGER, playerIn.posX + (double)(random.nextFloat() * playerIn.getWidth() * 2.0F) - (double)playerIn.getWidth(), playerIn.posY + 0.5D + (double)(random.nextFloat() * playerIn.getHeight()), playerIn.posZ + (double)(random.nextFloat() * playerIn.getWidth() * 2.0F) - (double)playerIn.getWidth(), 0.0D, 0.3D, 0.0D);
         playerIn.addItemStackToInventory(new ItemStack(Items.DIAMOND, 3));
         ItemStack itemstack = playerIn.getHeldItem(handIn);
-        itemstack.shrink(1);
+        if (!playerIn.abilities.isCreativeMode) itemstack.shrink(1);
         return new ActionResult<>(ActionResultType.SUCCESS, itemstack);
     }
 

@@ -16,6 +16,7 @@ public class ItemsInit
     public static final Item ASE= register("ase", new Item(new Item.Properties().group(NewGroup.instance)));
     public static final Item QUEEN = register("queen", new Item(new Item.Properties().group(NewGroup.instance)));
     public static final Item BLACK_LOTUS = register("black_lotus", new BlackLotus(new Item.Properties().group(NewGroup.instance)));
+    public static final Item CARD = register("card", BlocksInit.CARD);
 
     private static Item register(String name, Block block)
     {
