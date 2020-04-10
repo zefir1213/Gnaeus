@@ -1,9 +1,10 @@
 {
 	"parent": "block/block",
 	"textures": {
-		"0": "block/texture",
+		"0": "gnaeus:blank",
 		"1": "gnaeus:items/queen",
-		"particle": "block/texture"
+		"2": "gnaeus:reverse",
+		"particle": "gnaeus:reverse"
 	},
 	"elements": [
 		{
@@ -16,7 +17,7 @@
 				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
 				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
 				"up": {"uv": [3, 0, 13, 16], "texture": "#1"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#missing"}
+				"down": {"uv": [3, 0, 13, 16], "texture": "#2"}
 			}
 		}
 	]
