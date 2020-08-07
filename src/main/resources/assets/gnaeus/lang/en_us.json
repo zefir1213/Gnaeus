@@ -4,5 +4,7 @@
     "item.gnaeus.black_lotus": "Black Lotus",
     "block.gnaeus.my_block": "My Block",
     "block.gnaeus.card": "Card",
+    "item.minecraft.potion.effect.freeze": "Freeze Potion",
+    "effect.gnaeus.freeze": "Freeze",
     "itemGroup.gnaeus": "Gnaeus"
 }
