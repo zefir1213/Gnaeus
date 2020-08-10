@@ -1,7 +1,8 @@
 package com.zefir.gnaeus.init;
 
 import com.zefir.gnaeus.NewGroup;
-import com.zefir.gnaeus.items.BlackLotus;
+import com.zefir.gnaeus.item.BlackLotus;
+import com.zefir.gnaeus.item.IceDagger;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -17,6 +18,7 @@ public class ItemsInit
     public static final Item QUEEN = register("queen", new Item(new Item.Properties().group(NewGroup.instance)));
     public static final Item BLACK_LOTUS = register("black_lotus", new BlackLotus(new Item.Properties().group(NewGroup.instance)));
     public static final Item CARD = register("card", BlocksInit.CARD);
+    public static final Item ICE_DAGGER = register("ice_dagger", new IceDagger());
 
     private static Item register(String name, Block block)
     {

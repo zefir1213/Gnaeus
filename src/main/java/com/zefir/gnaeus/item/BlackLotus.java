@@ -1,4 +1,4 @@
-package com.zefir.gnaeus.items;
+package com.zefir.gnaeus.item;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
