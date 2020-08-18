@@ -21,8 +21,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 //@net.minecraftforge.registries.ObjectHolder("gnaeus")
 public class ModParticles
 {
-    private static final DeferredRegister<ParticleType<?>> PARTICLES = new DeferredRegister<>(ForgeRegistries.PARTICLE_TYPES, "gnaeus");
-
+    private static final DeferredRegister<ParticleType<?>> PARTICLES = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, "gnaeus");
     //public static final RegistryObject<BasicParticleType> FREEZE = PARTICLES.register("freeze", () -> new BasicParticleType(false));
 
     public static final BasicParticleType FREEZE = register("gnaeus:freeze", false);

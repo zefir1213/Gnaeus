@@ -1,6 +1,5 @@
 package com.zefir.gnaeus.potions;
 
-import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectType;
 import net.minecraftforge.fml.common.Mod;

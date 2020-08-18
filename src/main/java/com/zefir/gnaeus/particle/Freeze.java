@@ -1,12 +1,15 @@
 package com.zefir.gnaeus.particle;
 
 import net.minecraft.client.particle.*;
+import net.minecraft.client.world.ClientWorld;
 import net.minecraft.particles.BasicParticleType;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
+
 public class Freeze extends SpriteTexturedParticle
 {
-    protected Freeze(World world, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
+    protected Freeze(ClientWorld world, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
         super(world, x, y, z, xSpeed, ySpeed, zSpeed);
     }
 
@@ -24,10 +27,10 @@ public class Freeze extends SpriteTexturedParticle
             this.spriteSet = sprite;
         }
 
+        @Nullable
         @Override
-        public Particle makeParticle(BasicParticleType typeIn, World worldIn, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed)
-        {
-            SpriteTexturedParticle freeze = new Freeze(worldIn, x, y, z, xSpeed, ySpeed, zSpeed);
+        public Particle makeParticle(BasicParticleType basicParticleType, ClientWorld clientWorld, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
+            SpriteTexturedParticle freeze = new Freeze(clientWorld, x, y, z, xSpeed, ySpeed, zSpeed);
             freeze.selectSpriteRandomly(spriteSet);
             return freeze ;
         }

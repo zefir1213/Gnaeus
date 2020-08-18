@@ -1,24 +1,23 @@
 package com.zefir.gnaeus.item;
 
+import com.zefir.gnaeus.tags.ModTags;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.util.LazyLoadBase;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.LazyValue;
 
 import java.util.function.Supplier;
 
 public enum  ModItemTier implements IItemTier
 {
     ICE(0, 29, 8, 0, 19, () -> {
-        return Ingredient.fromTag(new ItemTags.Wrapper(new ResourceLocation("gnaeus", "ice")));});
+        return Ingredient.fromTag(ModTags.ICE);});
 
     int maxUses;
     float efficiency;
     float attackDamage;
     int harvestLevel;
     int enchantability;
-    private final LazyLoadBase<Ingredient> repairMaterial;
+    private final LazyValue<Ingredient> repairMaterial;
 
     ModItemTier(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantability, Supplier<Ingredient> repairMaterial)
     {
@@ -27,7 +26,7 @@ public enum  ModItemTier implements IItemTier
         this.attackDamage = attackDamage;
         this.harvestLevel = harvestLevel;
         this.enchantability = enchantability;
-        this.repairMaterial =  new LazyLoadBase<>(repairMaterial);
+        this.repairMaterial =  new LazyValue<>(repairMaterial);
     }
 
     @Override
