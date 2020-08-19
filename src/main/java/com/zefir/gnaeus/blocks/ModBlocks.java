@@ -1,4 +1,4 @@
-package com.zefir.gnaeus.init;
+package com.zefir.gnaeus.blocks;
 
 import com.zefir.gnaeus.blocks.Card;
 import net.minecraft.block.Block;
@@ -8,7 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 @net.minecraftforge.registries.ObjectHolder("gnaeus")
 @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
-public class BlocksInit
+public class ModBlocks
 {
     public static Block MY_BLOCK = register("my_block", new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10)));
     public static Block CARD = register("card", new Card());

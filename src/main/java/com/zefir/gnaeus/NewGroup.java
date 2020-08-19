@@ -1,6 +1,6 @@
 package com.zefir.gnaeus;
 
-import com.zefir.gnaeus.init.ItemsInit;
+import com.zefir.gnaeus.item.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
@@ -16,6 +16,6 @@ public class NewGroup extends ItemGroup
     @Override
     public ItemStack createIcon()
     {
-        return new ItemStack(ItemsInit.ASE);
+        return new ItemStack(ModItems.ASE);
     }
 }

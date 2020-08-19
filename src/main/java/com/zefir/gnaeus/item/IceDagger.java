@@ -1,6 +1,5 @@
 package com.zefir.gnaeus.item;
 
-import com.zefir.gnaeus.particle.Freeze;
 import com.zefir.gnaeus.potions.Effects;
 import com.zefir.gnaeus.potions.FreezeEffectInstance;
 import net.minecraft.entity.LivingEntity;

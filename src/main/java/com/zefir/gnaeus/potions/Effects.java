@@ -5,8 +5,6 @@ import net.minecraft.potion.EffectType;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 
-import java.util.UUID;
-
 @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 @net.minecraftforge.registries.ObjectHolder("gnaeus")
 public class Effects
